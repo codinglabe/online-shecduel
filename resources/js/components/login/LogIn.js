@@ -27,7 +27,7 @@ function Login(){
                                 <tr>
                                     <td></td>
                                     <td></td>
-                                    <td><Link to="/a_welcome" className="submit" type="submit" name="" id="" value=''>Sign In!</Link></td>
+                                    <td><Link to="/a_welcome"><input className="submit" type="submit" value="Sign In!"/></Link></td>
                                 </tr>
                                 </tbody>
                             </table>

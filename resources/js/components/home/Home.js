@@ -1,35 +1,16 @@
 import React, {Fragment}from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import Calender from '../../../image/calendar_write_32_hot.gif'
-import customer from '../../../image/customers_star_32_hot.gif'
-import exports from '../../../image/document_down_32_hot.gif'
-import SignOut from '../../../image/admin_off_32_hot.gif'
+import Headers from "../header/header";
 export default function Home(){
     return(
         <Fragment>
             <Container>
                 <Row className="justify-content-center">
                     <Col md={7} className="mt-2">
-                        <a href="#" className="text-decoration-none me-5 pe-4">
-                            <img src={Calender} alt="calender"/> <span className="calender-text">Add / Edit / Events</span>
-                        </a>
-
-                        <a href="#" className="text-decoration-none me-5 pe-4">
-                            <img src={customer} alt="calender"/> <span className="calender-text">Account / User Setup</span>
-                        </a>
-
-                        <a href="#" className="text-decoration-none me-5 pe-5">
-                            <img src={exports} alt="calender"/> <span className="calender-text">Export Data</span>
-                        </a>
-
-                        <a href="#" className="text-decoration-none me-5 ms-3">
-                            <img src={SignOut} alt="calender"/> <span className="calender-text">Sign Out</span>
-                        </a>
-
-
+                        <Headers/>
                         <p className="text-center mt-3 fw-bold">WELCOME TO ADMIN MENU</p>
                         <div className="select text-center">
-                            <select className="w-25" name="event" id="event">
+                            <select className="w-50" name="event" id="event">
                                 <option>EVENTS Modified in the last 10 days</option>
                                 <option>EVENTS Modified in the last 30 days</option>
                                 <option>EVENTS Modified in the last 30 days</option>
@@ -38,18 +19,75 @@ export default function Home(){
                             </select>
                         </div>
 
-                        <div className="userTable text-center">
+                        <div className="userTable text-center mt-4">
                             <table className="table table-bordered">
-                                <thead className="bg-primary">
-                                <tr>
-                                    <th>Modified By</th>
-                                    <th>Modified Time</th>
-                                    <th>Resource</th>
-                                    <th>Start Date</th>
-                                    <th>End Date</th>
-                                    <th>Notes</th>
+                                <thead className="bg-color">
+                                <tr className="table-title p-0 m-0">
+                                    <th className="table-title p-0 m-0">Modified By</th>
+                                    <th className="table-title p-0 m-0">Modified Time</th>
+                                    <th className="table-title p-0 m-0">Resource</th>
+                                    <th className="table-title p-0 m-0">Start Date</th>
+                                    <th className="table-title p-0 m-0">End Date</th>
+                                    <th className="table-title p-0 m-0">Notes</th>
                                 </tr>
                                 </thead>
+                                <tbody>
+                                    <tr className="list">
+                                        <td>Doe</td>
+                                        <td>2/19/2022 2:12:20 AM</td>
+                                        <td>Vrisha 2</td>
+                                        <td>2/20/2022 3:00:00 AM</td>
+                                        <td>2/28/2022 6:00:00 AM</td>
+                                        <td>red</td>
+                                    </tr>
+
+                                    <tr className="list">
+                                        <td>Doe</td>
+                                        <td>2/19/2022 2:12:20 AM</td>
+                                        <td>Vrisha 2</td>
+                                        <td>2/20/2022 3:00:00 AM</td>
+                                        <td>2/28/2022 6:00:00 AM</td>
+                                        <td>red</td>
+                                    </tr>
+
+                                    <tr className="list">
+                                        <td>Doe</td>
+                                        <td>2/19/2022 2:12:20 AM</td>
+                                        <td>Vrisha 2</td>
+                                        <td>2/20/2022 3:00:00 AM</td>
+                                        <td>2/28/2022 6:00:00 AM</td>
+                                        <td>red</td>
+                                    </tr>
+                                    <tr className="list">
+                                        <td>Doe</td>
+                                        <td>2/19/2022 2:12:20 AM</td>
+                                        <td>Vrisha 2</td>
+                                        <td>2/20/2022 3:00:00 AM</td>
+                                        <td>2/28/2022 6:00:00 AM</td>
+                                        <td>red</td>
+                                    </tr>
+                                    <tr className="list">
+                                        <td>Doe</td>
+                                        <td>2/19/2022 2:12:20 AM</td>
+                                        <td>Vrisha 2</td>
+                                        <td>2/20/2022 3:00:00 AM</td>
+                                        <td>2/28/2022 6:00:00 AM</td>
+                                        <td>red</td>
+                                    </tr>
+                                    <tr className="list">
+                                        <td>Doe</td>
+                                        <td>2/19/2022 2:12:20 AM</td>
+                                        <td>Vrisha 2</td>
+                                        <td>2/20/2022 3:00:00 AM</td>
+                                        <td>2/28/2022 6:00:00 AM</td>
+                                        <td>red</td>
+                                    </tr>
+                                    <tr className="list p-0 m-0">
+                                        <td colSpan="6" className="p-1 m-1" >
+                                            <span>&lt;Previous Page</span>&nbsp;<span>Next Page&gt;</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </Col>
