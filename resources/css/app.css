@@ -1,0 +1,20 @@
+body{
+    font-family: Tahoma;
+}
+.title{
+    color: #ff6600;
+    font-family: Tahoma;
+    margin-top: 5rem !important;
+}
+.submit{
+    margin-left: 7rem;
+}
+.powered{
+    font-size: 10px;
+}
+.calender-text{
+    font-size: 11px;
+}
+#event{
+    font-size: 13px;
+}
